@@ -9,7 +9,7 @@ import android.util.Log;
 public class MyLog {
 
 	public static boolean print = true;
-	private static final String LOG_FILTER = "thingcloud---";
+	private static final String LOG_FILTER = "money---";
 
 	public static void d(Class<?> class_value, String log) {
 		if (print) {

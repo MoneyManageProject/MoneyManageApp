@@ -16,9 +16,13 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+
     
-    
-    
+    <style name="no_title">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
     <!-- viewpage文本  滑动标签标题 -->
     <style name="viewpage_slidingTabTitle">
         <item name="android:layout_width">wrap_content</item>

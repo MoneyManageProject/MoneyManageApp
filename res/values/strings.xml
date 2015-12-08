@@ -5,4 +5,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 	<string name="platform_score">%s分</string>
+	
+	<string name="tab_subject">标的</string>
+	<string name="tab_platform">平台</string>
+	<string name="tab_information">资讯</string>
+	<string name="tab_comment">论坛</string>
 </resources>
