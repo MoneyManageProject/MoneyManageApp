@@ -47,7 +47,7 @@
                 android:indeterminateDrawable="@drawable/listview_progressbar_bg"
                 android:indeterminateDuration="12000" />
 
-            <com.lohas.android.common.custom.view.RoundProgressBar
+            <com.money.android.widget.RoundProgressBar
                 android:id="@+id/head_RoundProgressBar1"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
