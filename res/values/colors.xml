@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white_alpha_20">#33ffffff</color>
+    <color name="white_alpha_10">#19ffffff</color>
+    <color name="half_white">#7fffffff</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="Typeface">#333333</color>
+    <color name="yidian">#848484</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#B3000000</color>
+    <color name="black">#000000</color>
+    <color name="title_bar_bg">#50d2c2</color>
+    <color name="black_transparent_half">#7F000000</color>
+    <color name="orange">#FD9426</color>
+    <color name="gray">#dddddd</color>
+    <color name="loading_text_color">#8f8f8f</color>
+    <color name="main_bg">#ffffffff</color>
+    <color name="text_color_send_normal">#B8E4EF</color>
+    <color name="text_color_left_menu_normal">#3fffff</color>
+    <color name="text_color_left_menu_press">#4bbfb7</color>
+    <color name="line_color">#e7e7e7</color>
+    <color name="press_color">#40a89b</color>
+
+</resources>
