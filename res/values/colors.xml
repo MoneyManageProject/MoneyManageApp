@@ -22,5 +22,10 @@
     <color name="text_color_left_menu_press">#4bbfb7</color>
     <color name="line_color">#e7e7e7</color>
     <color name="press_color">#40a89b</color>
+    
+    
+        <!-- custom pulltorefresh listview -->
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
 
 </resources>
