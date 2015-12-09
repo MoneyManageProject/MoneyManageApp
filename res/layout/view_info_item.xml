@@ -9,6 +9,7 @@
         android:layout_height="60dp"
         android:layout_margin="3dp"
         android:src="@drawable/infor_img_default"
+        android:id="@+id/iv_infor_img"
         />
     <LinearLayout 
         android:layout_width="match_parent"
@@ -21,16 +22,18 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:text="砸钱圈地为哪般P2P疑被对赌倒逼"
+            android:id="@+id/tv_infor_title"
             />
         <TextView 
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:singleLine="true"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:text="劵商、地产、石墨烯概念股涨幅居前，军工股普跌。"
             android:textColor="#cccccc"
+            android:id="@+id/tv_infor_con"
             />
         <RelativeLayout 
             android:layout_width="match_parent"
@@ -41,16 +44,18 @@
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:text="11-26 08:20"
-            	android:textSize="16sp"
+            	android:textSize="12sp"
             	android:layout_alignParentLeft="true"
+            	android:id="@+id/tv_infor_time"
                 />
             <TextView 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:text="66677评论"
-            	android:textSize="16sp"
+            	android:textSize="12sp"
             	android:layout_alignParentRight="true"
+            	android:id="@+id/tv_infor_comment_count"
                 />
         </RelativeLayout>
     </LinearLayout>

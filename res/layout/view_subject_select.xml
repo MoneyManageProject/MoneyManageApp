@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+    <com.money.android.common.custom.SelectView 
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="match_parent"
+	   	android:id="@+id/sv_subject_investment_money"
+	   	android:layout_weight="1"
+	   	android:minWidth="80dp"
+	   	/>
+    <com.money.android.common.custom.SelectView 
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="match_parent"
+	   	android:id="@+id/sv_subject_investment_time"
+	   	android:layout_weight="1"
+	   	android:minWidth="120dp"
+	   	/>
+    <com.money.android.common.custom.SelectView 
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="match_parent"
+	   	android:id="@+id/sv_subject_expect_return"
+	   	android:layout_weight="1"
+	   	android:minWidth="100dp"
+	   	/>
+    <com.money.android.common.custom.SelectView 
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="match_parent"
+	   	android:id="@+id/sv_subject_risk"
+	   	android:layout_weight="1"
+	   	android:minWidth="60dp"
+	   	/>
+</LinearLayout>
