@@ -2,15 +2,6 @@ package com.money.android.platform;
 
 import java.util.ArrayList;
 
-import com.money.android.R;
-import com.money.android.base.BaseFragment;
-import com.money.android.common.entity.Platform;
-import com.money.android.common.util.MyLog;
-import com.money.android.subject.SubjectListAdapter;
-import com.money.android.widget.PullToRefreshListView;
-import com.money.android.widget.PullToRefreshListView.OnLoadMoreListener;
-import com.money.android.widget.PullToRefreshListView.OnRefreshListener;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,11 +9,21 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.money.android.R;
+import com.money.android.base.BaseFragment;
+import com.money.android.common.entity.Platform;
+import com.money.android.common.util.MyLog;
+import com.money.android.widget.PullToRefreshListView;
+import com.money.android.widget.PullToRefreshListView.OnLoadMoreListener;
+import com.money.android.widget.PullToRefreshListView.OnRefreshListener;
+
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class PlatformFragment extends BaseFragment implements
 		OnItemClickListener {
+
 	// protected FragmentManager mFragmentManager;
 	private PullToRefreshListView mListView;
 	private PlatformListAdapter mAdapter;
@@ -54,7 +55,7 @@ public class PlatformFragment extends BaseFragment implements
 		View view = inflater.inflate(R.layout.fragment_platform, container,
 				false);
 		mListView = (PullToRefreshListView) view
-				.findViewById(R.id.listview_subject);
+				.findViewById(R.id.listview_platform);
 		// 设置下拉刷新监听
 		mListView.setOnRefreshListener(new OnRefreshListener() {
 
