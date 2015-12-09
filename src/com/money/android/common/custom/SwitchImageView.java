@@ -22,6 +22,7 @@ import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Scroller;
@@ -223,8 +224,11 @@ public class SwitchImageView extends RelativeLayout{
 		private void initImageView(){
 			int size = imageSource.size();
 			//图片切换不会有太多，因此可以先创建所有的ImageView控件，但不提供图片资源
+			ImageView imageView;
 			for(int i = 0;i < size;i++){
-				imageViewList.add(new ImageView(context));
+				imageView = new ImageView(context);
+				imageView.setScaleType(ScaleType.FIT_XY);
+				imageViewList.add(imageView);
 			}
 		}
 		
@@ -242,7 +246,7 @@ public class SwitchImageView extends RelativeLayout{
 		public boolean isViewFromObject(View arg0, Object arg1) {
 			//判断将要显示的图片是否和现在显示的图片是同一个
 			//arg0为当前显示的图片，arg1是将要显示的图片
-			Log.e("HongLi", "isViewFromObject:" + (arg0 == arg1));
+//			Log.e("HongLi", "isViewFromObject:" + (arg0 == arg1));
 			return arg0 == arg1;
 		}
 		

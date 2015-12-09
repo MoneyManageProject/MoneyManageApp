@@ -39,6 +39,7 @@
 	        android:layout_gravity="center_vertical"
 	        android:text="利率范围:"
 	        android:textSize="14sp"
+		    android:textColor="@color/black"
 	        />
 	    <TextView 
 	        android:layout_width="wrap_content"
@@ -56,6 +57,7 @@
 	        android:text="7日成交额金额："
 	        android:textSize="14sp"
 	        android:layout_marginLeft="10dp"
+		    android:textColor="@color/black"
 	        />
 	    <TextView 
 	        android:layout_width="wrap_content"
@@ -64,6 +66,7 @@
 	        android:text="2536.00万元"
 	        android:textSize="14sp"
 	        android:id="@+id/tv_platform_trading_volume"
+		    android:textColor="@color/black"
 	        />
 	</LinearLayout>
 	<LinearLayout 
@@ -78,6 +81,7 @@
 	        android:layout_gravity="center_vertical"
 	        android:text="上线时间:"
 	        android:textSize="14sp"
+		    android:textColor="@color/black"
 	        />
 	    <TextView 
 	        android:layout_width="wrap_content"
@@ -95,6 +99,7 @@
 	        android:text="7日投资人数："
 	        android:textSize="14sp"
 	        android:layout_marginLeft="10dp"
+		    android:textColor="@color/black"
 	        />
 	    <TextView 
 	        android:layout_width="wrap_content"
@@ -103,6 +108,7 @@
 	        android:text="14626人"
 	        android:textSize="14sp"
 	        android:id="@+id/tv_platform_investment_number"
+		    android:textColor="@color/black"
 	        />
 	</LinearLayout>
 	<LinearLayout 
@@ -117,6 +123,7 @@
 	        android:layout_gravity="center_vertical"
 	        android:text="口碑评分:"
 	        android:textSize="14sp"
+		    android:textColor="@color/black"
 	        />
 	    <com.money.android.common.custom.StarScoreView 
 	        android:layout_width="wrap_content"

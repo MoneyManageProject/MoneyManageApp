@@ -4,26 +4,34 @@ import java.util.ArrayList;
 
 import com.money.android.R;
 import com.money.android.base.BaseFragment;
+import com.money.android.common.custom.SwitchImageView;
 import com.money.android.common.entity.Information;
 import com.money.android.common.entity.Platform;
 import com.money.android.common.util.MyLog;
 import com.money.android.platform.PlatformListAdapter;
+import com.money.android.subject.SubjectDeatilFragmentActivity;
 import com.money.android.widget.PullToRefreshListView;
 import com.money.android.widget.PullToRefreshListView.OnLoadMoreListener;
 import com.money.android.widget.PullToRefreshListView.OnRefreshListener;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView.FindListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class InformationFragment extends BaseFragment {
 	// protected FragmentManager mFragmentManager;
 	private PullToRefreshListView mListView;
 	private InformationAdapter mAdapter;
 	private ArrayList<Information> inforList;
+	private ArrayList<String> switchImgPathList;
+	private SwitchImageView switchImageView;
 
 	private Handler mHandler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
@@ -47,10 +55,9 @@ public class InformationFragment extends BaseFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		MyLog.d(InformationFragment.class, "onCreateView");
-		View view = inflater.inflate(R.layout.fragment_information, container,
-				false);
-		mListView = (PullToRefreshListView) view
-				.findViewById(R.id.listview_information);
+		View view = inflater.inflate(R.layout.fragment_information, container,false);
+		switchImageView		= (SwitchImageView)view.findViewById(R.id.siv_infor_switch);
+		mListView 			= (PullToRefreshListView) view.findViewById(R.id.listview_information);
 		// 设置下拉刷新监听
 		mListView.setOnRefreshListener(new OnRefreshListener() {
 
@@ -96,6 +103,36 @@ public class InformationFragment extends BaseFragment {
 		addPlatform();
 		mAdapter = new InformationAdapter(getActivity(),inforList);
 		mListView.setAdapter(mAdapter);
+		
+		//初始化图片切换
+		switchImgPathList = new ArrayList<String>();
+		initSwitchImgPathList();
+		switchImageView.init(switchImgPathList);
+		
+		//设置点击事件
+		mListView.setOnItemClickListener(onItemClickListener);
+	}
+	
+	private OnItemClickListener onItemClickListener = new OnItemClickListener() {
+
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
+			Intent intent = new Intent();
+			intent.setClass(getActivity(), InforDetailActivity.class);
+			startActivity(intent);
+		}
+	};
+	
+	private void initSwitchImgPathList(){
+		if(null == switchImgPathList){
+			switchImgPathList = new ArrayList<String>();
+		}
+		switchImgPathList.add("http://192.168.1.199/08/2015-08-20_14_56_29200002_s.jpg");
+		switchImgPathList.add("http://192.168.1.199/08/2015-08-20_14_56_29200002_s.jpg");
+		switchImgPathList.add("http://192.168.1.199/08/2015-08-20_14_56_29200002_s.jpg");
+		switchImgPathList.add("http://192.168.1.199/08/2015-08-20_14_56_29200002_s.jpg");
+		switchImgPathList.add("http://192.168.1.199/08/2015-08-20_14_56_29200002_s.jpg");
+		switchImgPathList.add("http://192.168.1.199/08/2015-08-20_14_56_29200002_s.jpg");
 	}
 	
 	private void addPlatform(){
