@@ -47,8 +47,7 @@ public class PlatformFragment extends BaseFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		MyLog.d(PlatformFragment.class, "onCreateView");
-		View view = inflater.inflate(R.layout.fragment_platform, container,
-				false);
+		View view = inflater.inflate(R.layout.fragment_platform, container,false);
 		mListView = (PullToRefreshListView) view
 				.findViewById(R.id.listview_subject);
 		// 设置下拉刷新监听
