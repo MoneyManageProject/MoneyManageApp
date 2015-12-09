@@ -55,6 +55,10 @@
             android:name="com.money.android.subject.SubjectDeatilFragmentActivity"
             android:theme="@style/no_title" >
         </activity>
+                <activity
+            android:name="com.money.android.platform.PlatformInfoFragmentActivity"
+            android:theme="@style/no_title" >
+        </activity>
     </application>
 
 </manifest>

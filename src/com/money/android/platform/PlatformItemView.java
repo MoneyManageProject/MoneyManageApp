@@ -32,9 +32,8 @@ public class PlatformItemView extends LinearLayout{
 
 	private void init(){
 		initView();
-		initListener();
 	}
-	
+
 	private void initView(){
 		LayoutInflater.from(getContext()).inflate(R.layout.view_platform_item, this);
 		cvStarScoreView			= (StarScoreView)findViewById(R.id.cv_platform_score);
@@ -45,7 +44,7 @@ public class PlatformItemView extends LinearLayout{
 		tvOnlineTime			= (TextView)findViewById(R.id.tv_platform_online_time);
 		tvInvestmentNumber		= (TextView)findViewById(R.id.tv_platform_investment_number);
 	}
-	
+
 	public void setData(Platform platform){
 		if(null == platform){
 			return;
@@ -58,16 +57,5 @@ public class PlatformItemView extends LinearLayout{
 		tvOnlineTime.setText(platform.getOnlineTime());
 		tvInvestmentNumber.setText(platform.getSevenInvestmentNumber());
 	}
-	
-	private void initListener(){
-		this.setOnClickListener(onClickListener);
-	}
-	
-	private OnClickListener onClickListener = new OnClickListener() {
-		
-		@Override
-		public void onClick(View v) {
-			
-		}
-	};
+
 }
