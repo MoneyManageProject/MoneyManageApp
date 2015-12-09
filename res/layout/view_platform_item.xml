@@ -14,6 +14,7 @@
 	        android:layout_height="wrap_content"
 	        android:src="@drawable/platform_log"
 	        android:layout_gravity="center_vertical"
+	        android:id="@+id/iv_platform_logo"
 	        />
 	    <TextView 
 	        android:layout_width="wrap_content"
@@ -23,6 +24,7 @@
 	        android:gravity="center_vertical"
 	        android:textColor="@android:color/holo_blue_dark"
 	        android:textSize="16sp"
+	        android:id="@+id/tv_platform_name"
 	        />
 	</LinearLayout>
 	<LinearLayout 
@@ -45,6 +47,7 @@
 	        android:text="8%~12%"
 	        android:textSize="14sp"
 	        android:textColor="@android:color/holo_blue_dark"
+	        android:id="@+id/tv_platform_rate_range"
 	        />
 	    <TextView 
 	        android:layout_width="wrap_content"
@@ -60,6 +63,7 @@
 	        android:layout_gravity="center_vertical"
 	        android:text="2536.00万元"
 	        android:textSize="14sp"
+	        android:id="@+id/tv_platform_trading_volume"
 	        />
 	</LinearLayout>
 	<LinearLayout 
@@ -82,6 +86,7 @@
 	        android:text="2007-06-17"
 	        android:textSize="14sp"
 	        android:textColor="@android:color/holo_blue_dark"
+	        android:id="@+id/tv_platform_online_time"
 	        />
 	    <TextView 
 	        android:layout_width="wrap_content"
@@ -97,6 +102,7 @@
 	        android:layout_gravity="center_vertical"
 	        android:text="14626人"
 	        android:textSize="14sp"
+	        android:id="@+id/tv_platform_investment_number"
 	        />
 	</LinearLayout>
 	<LinearLayout 
@@ -116,6 +122,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_gravity="center_vertical"
+	        android:id="@+id/cv_platform_score"
 	        />
 	</LinearLayout>
 </LinearLayout>
