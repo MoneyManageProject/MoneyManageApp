@@ -31,7 +31,7 @@ public class CommentItemReplyView extends LinearLayout{
 	}
 	
 	private void initView(){
-		LayoutInflater.from(getContext()).inflate(R.layout.view_comment_item, this);
+		LayoutInflater.from(getContext()).inflate(R.layout.view_comment_reply_item, this);
 		ivHead				= (ImageView)findViewById(R.id.iv_comment_item_head);
 		tvName				= (TextView)findViewById(R.id.tv_comment_item_name);
 		tvService			= (TextView)findViewById(R.id.tv_comment_item_service);

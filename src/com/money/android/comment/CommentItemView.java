@@ -30,7 +30,7 @@ public class CommentItemView extends LinearLayout{
 	}
 	
 	private void initView(){
-		LayoutInflater.from(getContext()).inflate(R.layout.view_comment_item, this);
+		LayoutInflater.from(getContext()).inflate(R.layout.view_comment_reply_item, this);
 	}
 	
 	public void setData(Platform platform){

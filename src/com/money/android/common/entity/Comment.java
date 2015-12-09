@@ -8,5 +8,6 @@ package com.money.android.common.entity;
  *
  */
 public class Comment {
-
+	private String headImgPath;
+	private String 
 }
