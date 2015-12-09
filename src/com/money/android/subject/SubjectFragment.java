@@ -8,13 +8,16 @@ import com.money.android.widget.PullToRefreshListView.OnLoadMoreListener;
 import com.money.android.widget.PullToRefreshListView.OnRefreshListener;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 
-public class SubjectFragment extends BaseFragment {
+public class SubjectFragment extends BaseFragment implements OnItemClickListener{
 	// protected FragmentManager mFragmentManager;
 	private PullToRefreshListView mListView;
 	private SubjectListAdapter mAdapter;
@@ -76,7 +79,7 @@ public class SubjectFragment extends BaseFragment {
 						// 加载完成
 						mListView.onLoadMoreComplete();
 						// 是否允许继续下拉加载
-						mListView.setCanLoadMore(false);
+						// mListView.setCanLoadMore(false);
 
 					}
 				}, 3000);
@@ -84,12 +87,14 @@ public class SubjectFragment extends BaseFragment {
 			}
 		});
 		initDatas();
+		mListView.setOnItemClickListener(this);
 		return view;
 	}
 
 	private void initDatas() {
 		mAdapter = new SubjectListAdapter(getActivity());
 		mListView.setAdapter(mAdapter);
+		
 	}
 
 	@Override
@@ -139,5 +144,13 @@ public class SubjectFragment extends BaseFragment {
 	public void onDetach() {
 		MyLog.d(SubjectFragment.class, "onDetach");
 		super.onDetach();
+	}
+
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+		Intent intent = new Intent();
+		intent.setClass(getActivity(), SubjectDeatilFragmentActivity.class);
+		startActivity(intent);
+		
 	}
 }
