@@ -25,6 +25,7 @@
             android:textSize="14sp"
             android:text="砸钱圈地为哪般P2P疑被对赌倒逼"
             android:id="@+id/tv_infor_title"
+		    android:textColor="@color/black"
             />
         <TextView 
             android:layout_width="match_parent"
@@ -47,6 +48,7 @@
             	android:textSize="12sp"
             	android:layout_alignParentLeft="true"
             	android:id="@+id/tv_infor_time"
+		        android:textColor="@color/black"
                 />
             <TextView 
                 android:layout_width="wrap_content"
@@ -56,6 +58,7 @@
             	android:textSize="12sp"
             	android:layout_alignParentRight="true"
             	android:id="@+id/tv_infor_comment_count"
+		        android:textColor="@color/black"
                 />
         </RelativeLayout>
     </LinearLayout>
