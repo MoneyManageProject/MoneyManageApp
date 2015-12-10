@@ -1,26 +1,25 @@
-package com.money.android.subject;
+package com.money.android.platform;
 
 import java.util.ArrayList;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
-import com.money.android.platform.PlatformInfoFragment;
+import com.money.android.subject.SubjectFragment;
 import com.money.android.widget.viewpagefragment.BaseViewPagerFragment;
 import com.money.android.widget.viewpagefragment.OnTabReselectListener;
 import com.money.android.widget.viewpagefragment.ViewPageFragmentAdapter;
 import com.money.android.widget.viewpagefragment.ViewPageInfo;
 
-
-public class SubjectDetailViewpageFragment extends BaseViewPagerFragment
+public class PlatformDetailViewpageFragment extends BaseViewPagerFragment
 		implements OnTabReselectListener {
 
-	private String[] tabNames = { "introduction", "control", "prove" };
+	private String[] tabNames = { "platform_info", "platform_subject" };
 
-	private String[] tabTitles = { "项目简介", "风控措施", "资产包证明" };
+	private String[] tabTitles = { "平台信息", "平台标的" };
 
-	private Class[] claszz = new Class[] { SubjectDetaiIntroductionFragment.class,
-			SubjectDetaiIntroductionFragment.class, SubjectDetaiIntroductionFragment.class};
+	private Class[] claszz = new Class[] { PlatformInfoFragment.class,
+			SubjectFragment.class };
 
 	@Override
 	protected void onSetupTabAdapter(ViewPageFragmentAdapter adapter) {
