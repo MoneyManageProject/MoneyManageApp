@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/gray_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门评论"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/blue_line" />
+
+    <LinearLayout
+        android:id="@+id/comment_container_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="查看更多评论"
+        android:textColor="#fc091b" />
+
+    <EditText
+        android:id="@+id/comment_edittxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comment_edit_bg"
+        android:ellipsize="end"
+        android:hint="我来说两句......"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="#3C3C3C"
+        android:textColorHint="#cccccc"
+        android:textSize="17sp" />
+
+</LinearLayout>
