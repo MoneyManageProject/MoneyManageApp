@@ -28,6 +28,6 @@
     <color name="pull_refresh_textview">#000000</color>
     <color name="gold">#000000</color>
     
-    <color name="detail_time">#ffcccccc</color>
+    <color name="detail_time">#ff5d5d5d</color>
 
 </resources>

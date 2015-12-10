@@ -7,29 +7,29 @@
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
 	   	android:layout_height="30dp"
-	   	android:id="@+id/sv_platform_online_time"
-	   	style="@style/select_item"
+	   	android:id="@+id/sv_comment_hot"
 	   	android:minWidth="80dp"
+	   	style="@style/select_item"
 	   	/>
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
 	   	android:layout_height="30dp"
-	   	android:id="@+id/sv_platform_security_mode"
+	   	android:id="@+id/sv_comment_time"
+	   	android:minWidth="90dp"
 	   	style="@style/select_item"
-	   	android:minWidth="100dp"
 	   	/>
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
 	   	android:layout_height="30dp"
-	   	android:id="@+id/sv_platform_average_income"
+	   	android:id="@+id/sv_comment_essence"
+	   	android:minWidth="90dp"
 	   	style="@style/select_item"
-	   	android:minWidth="80dp"
 	   	/>
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
 	   	android:layout_height="30dp"
-	   	android:id="@+id/sv_platform_score"
+	   	android:id="@+id/sv_comment_plate"
+	   	android:minWidth="90dp"
 	   	style="@style/select_item"
-	   	android:minWidth="60dp"
 	   	/>
 </LinearLayout>

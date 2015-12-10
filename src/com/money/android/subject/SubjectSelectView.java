@@ -45,11 +45,11 @@ public class SubjectSelectView extends LinearLayout{
 	}
 	
 	private void initView(){
-		LayoutInflater.from(getContext()).inflate(R.layout.view_platform_select, this);
-		svInvestmentMoney			= (SelectView)findViewById(R.id.sv_platform_online_time);
-		svInvestmentTime			= (SelectView)findViewById(R.id.sv_platform_security_mode);
-		svExpectReturn			= (SelectView)findViewById(R.id.sv_platform_average_income);
-		svRisk					= (SelectView)findViewById(R.id.sv_platform_score);
+		LayoutInflater.from(getContext()).inflate(R.layout.view_subject_select, this);
+		svInvestmentMoney			= (SelectView)findViewById(R.id.sv_subject_investment_money);
+		svInvestmentTime			= (SelectView)findViewById(R.id.sv_subject_investment_time);
+		svExpectReturn				= (SelectView)findViewById(R.id.sv_subject_expect_return);
+		svRisk						= (SelectView)findViewById(R.id.sv_subject_risk);
 	}
 	
 	@SuppressWarnings("unchecked")

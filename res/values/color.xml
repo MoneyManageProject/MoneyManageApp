@@ -4,4 +4,5 @@
     <color name="infor_line">#ff5d5d5d</color>
     <color name="red">#ffFF0000</color>
     <color name="comment_item_bottom">#ffcccccc</color>
+    <color name="selectview_bg">#ff148AF6</color>
 </resources>

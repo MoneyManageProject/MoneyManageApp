@@ -38,5 +38,5 @@
     <!-- 平台 -->
 
     <string name="infor_comment_count">%s评论</string>
-
+    <string name="comment_comment_count">%s评论</string>
 </resources>

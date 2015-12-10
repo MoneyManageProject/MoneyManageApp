@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <include layout="@layout/view_detail_top"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_logo"
+            android:id="@+id/iv_comment_detail_head"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="用户XXXXX"
+            android:textSize="12sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:id="@+id/tv_comment_detail_name"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="10-30 07:34"
+            android:textSize="12sp"
+            android:textColor="@color/detail_time"
+            android:id="@+id/tv_comment_detail_time"
+            android:layout_marginLeft="100dp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="南方都市报"
+            android:textSize="12sp"
+            android:textColor="@color/detail_time"
+            android:id="@+id/tv_comment_detail_source"
+            android:layout_marginLeft="15dp"
+            />
+    </LinearLayout>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="安装包的大小,【cordova,一个纯html5的 apk 仅有1.5M左右(不涉及原生功能),涉及到一些原生功能,比如相机、文件系统、推送等因为需要加入插件,一般 apk 在 5M 左右】，而【crosswalk,一个纯html的 apk 就达到了19M左右,如果需要加入杂七杂八的插件,那就是奔着25M去了】,天朝流量还是很贵的....（用户一看app这么大,算了不下了...)
+开发的简便性, 【我是一个专职 cordova 开发者,所以cordova已经用习惯，这一条可能不够客观，仅供参考】.首先【cordova 3.0+ 的版本开发起来都很方便了,命
+流畅度（大家最关心的应该在这里了...首先我说一下我是用的 App Framework 这个前端框架的,这个现在也是intel的 - -），我测试的手机是 华为 g510 android 4.1.1 的手机,性能并不强，在滚动流畅度和整理流畅度上 crosswalk 不得不承认确实有明显提升，但是个人觉得cordova在安卓上的流畅度也在可以接受的范围之内。【其实说白了，cordova性能确实差一些，但是可以通过一些手段优化来提升性能，或者牺牲一下用户体验，关闭一些没必要的切换动画什么的来提升】"
+        android:textSize="12sp"
+        android:textColor="@color/detail_time"
+        android:id="@+id/tv_comment_detail_con"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 89"
+            android:textColor="@color/comment_item_bottom"
+            android:drawableLeft="@drawable/comment_zan"
+         	android:gravity="center_vertical"
+         	android:textSize="14sp"
+         	android:layout_marginRight="20dp"
+         	android:id="@+id/btn_comment_detail_zan"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 回复"
+            android:textColor="@color/comment_item_bottom"
+            android:drawableLeft="@drawable/comment_zan"
+         	android:gravity="center_vertical"
+         	android:textSize="14sp"
+         	android:layout_marginRight="20dp"
+         	android:id="@+id/btn_comment_detail_reply"
+            />
+    </LinearLayout>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/infor_line"
+        />
+</LinearLayout>
