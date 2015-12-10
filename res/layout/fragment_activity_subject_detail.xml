@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
+    
+    <include 
+        layout="@layout/view_detail_top"/>
     <include layout="@layout/view_subject_detail_top" />
 
     <FrameLayout

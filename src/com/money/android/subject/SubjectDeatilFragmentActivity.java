@@ -7,6 +7,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 public class SubjectDeatilFragmentActivity extends FragmentActivity {
 	private FragmentManager mFgmanager;
@@ -15,9 +18,23 @@ public class SubjectDeatilFragmentActivity extends FragmentActivity {
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
 		setContentView(R.layout.fragment_activity_subject_detail);
-
+		initTitle();
 		mFgmanager = getSupportFragmentManager();
 		addViewpageFragment();
+	}
+	
+	private void initTitle() {
+		TextView backTxt = (TextView) findViewById(R.id.tv_title_back);
+		backTxt.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				finish();
+			}
+		});
+
+		TextView titleTxt = (TextView) findViewById(R.id.tv_title_name);
+		titleTxt.setText("标的详情");
 	}
 	
 	private void addViewpageFragment(){
