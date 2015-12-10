@@ -7,6 +7,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 public class PlatformInfoFragmentActivity extends FragmentActivity {
 	private FragmentManager mFgmanager;
@@ -15,12 +18,26 @@ public class PlatformInfoFragmentActivity extends FragmentActivity {
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
 		setContentView(R.layout.fragment_activity_platform_info);
-
+		initTitle();
 		mFgmanager = getSupportFragmentManager();
 		addViewpageFragment();
 	}
-	
-	private void addViewpageFragment(){
+
+	private void initTitle() {
+		TextView backTxt = (TextView) findViewById(R.id.tv_title_back);
+		backTxt.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				finish();
+			}
+		});
+
+		TextView titleTxt = (TextView) findViewById(R.id.tv_title_name);
+		titleTxt.setText("平台详情");
+	}
+
+	private void addViewpageFragment() {
 		PlatformDetailViewpageFragment viewpageFragment = new PlatformDetailViewpageFragment();
 		addFragment(R.id.fragment_container, viewpageFragment);
 	}

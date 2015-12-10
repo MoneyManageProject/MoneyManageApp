@@ -46,9 +46,9 @@ public class HotCommentView extends LinearLayout {
 		LayoutInflater.from(getContext()).inflate(R.layout.view_hot_comment,
 				this);
 		mCommentContainer = (LinearLayout) findViewById(R.id.comment_container_lin);
-		CommentItemView itemView = new CommentItemView(mContext);
+		CommentItemReplyView itemView = new CommentItemReplyView(mContext);
 		mCommentContainer.addView(itemView);
-		CommentItemView itemView2 = new CommentItemView(mContext);
+		CommentItemReplyView itemView2 = new CommentItemReplyView(mContext);
 		mCommentContainer.addView(itemView2);
 		mCommentEdit = (EditText) findViewById(R.id.comment_edittxt);
 	}

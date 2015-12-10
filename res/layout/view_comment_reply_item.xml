@@ -73,7 +73,8 @@
         </RelativeLayout>
         <TextView 
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
+            android:maxLength="200"
             android:text="首相为“首席宰相”的缩写，是君主立宪制国家中内阁首脑的中文通称。如英国、日本的内阁首脑。首相的产生各国规定不一。英国首相只能由下院多数党领袖担任并由英王任命；日本首相由国会提名经议员选举产生，并经天皇任命，第二次世界大战以后，在议会中占多数议席的政党（执政党）的领袖（总裁）是当然的首相。首相享有非常广泛的权力。"
             android:textSize="14sp"
             android:ellipsize="end"
