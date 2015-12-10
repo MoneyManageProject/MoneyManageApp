@@ -3,9 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:background="@color/white"
-    android:orientation="vertical"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp">
+    android:orientation="vertical">
     <com.money.android.platform.PlatformSelectView 
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -17,7 +15,9 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:divider="#dddddd"
-        android:dividerHeight="1dp" >
+        android:dividerHeight="1dp"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp" >
     </com.money.android.widget.PullToRefreshListView>
 
 </LinearLayout>

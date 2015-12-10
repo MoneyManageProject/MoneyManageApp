@@ -9,11 +9,11 @@
         />
     <LinearLayout 
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="15dp"
         android:orientation="horizontal"
         android:id="@+id/switch_image_dot_container"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         >
         
     </LinearLayout>

@@ -55,21 +55,21 @@ public class PlatformSelectView extends LinearLayout{
 	@SuppressWarnings("unchecked")
 	private void initData(){
 		addOnlineTimeList();
-		svOnlineTime.setAdapter(new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_item, listOnlineTime));
+		svOnlineTime.setAdapter(new ArrayAdapter<String>(getContext(),R.layout.view_selectview_item, listOnlineTime));
 		((ArrayAdapter<String>)svOnlineTime.getAdapter()).setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		
 		addSecurityModeList();
-		svSecurityMode.setAdapter(new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_item, listSecurityMode));
+		svSecurityMode.setAdapter(new ArrayAdapter<String>(getContext(),R.layout.view_selectview_item, listSecurityMode));
 		((ArrayAdapter<String>)svSecurityMode.getAdapter()).setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		svSecurityMode.setSelection(0);
 		
 		addAverageIncome();
-		svAverageIncome.setAdapter(new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_item, listAverageIncome));
+		svAverageIncome.setAdapter(new ArrayAdapter<String>(getContext(),R.layout.view_selectview_item, listAverageIncome));
 		((ArrayAdapter<String>)svAverageIncome.getAdapter()).setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		svAverageIncome.setSelection(0);
 		
 		addScore();
-		svScore.setAdapter(new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_item, listScore));
+		svScore.setAdapter(new ArrayAdapter<String>(getContext(),R.layout.view_selectview_item, listScore));
 		((ArrayAdapter<String>)svScore.getAdapter()).setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		svScore.setSelection(0);
 	}
@@ -91,7 +91,7 @@ public class PlatformSelectView extends LinearLayout{
             arg0.setVisibility(View.VISIBLE);
             arg1.setVisibility(View.VISIBLE);
             ((TextView)arg1).setTextColor(getContext().getResources().getColor(R.color.black));
-            ((TextView)arg1).setTextSize(12);
+            ((TextView)arg1).setTextSize(10);
         }    
         public void onNothingSelected(AdapterView<?> arg0) {
             arg0.setVisibility(View.VISIBLE);

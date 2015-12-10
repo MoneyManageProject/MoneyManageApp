@@ -7,9 +7,10 @@
     <ImageView 
         android:layout_width="50dp"
         android:layout_height="60dp"
-        android:layout_margin="3dp"
+        android:layout_margin="4dp"
         android:src="@drawable/infor_img_default"
         android:id="@+id/iv_infor_img"
+        android:scaleType="fitXY"
         />
     <LinearLayout 
         android:layout_width="match_parent"

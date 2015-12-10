@@ -2,34 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:background="@color/white"
+    android:background="@color/selectview_bg"
     android:orientation="horizontal" >
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
-	   	android:layout_height="match_parent"
+	   	android:layout_height="30dp"
 	   	android:id="@+id/sv_platform_online_time"
-	   	android:layout_weight="1"
+	   	style="@style/select_item"
 	   	android:minWidth="80dp"
 	   	/>
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
-	   	android:layout_height="match_parent"
+	   	android:layout_height="30dp"
 	   	android:id="@+id/sv_platform_security_mode"
-	   	android:layout_weight="1"
-	   	android:minWidth="120dp"
-	   	/>
-    <com.money.android.common.custom.SelectView 
-	   	android:layout_width="wrap_content"
-	   	android:layout_height="match_parent"
-	   	android:id="@+id/sv_platform_average_income"
-	   	android:layout_weight="1"
+	   	style="@style/select_item"
 	   	android:minWidth="100dp"
 	   	/>
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
-	   	android:layout_height="match_parent"
+	   	android:layout_height="30dp"
+	   	android:id="@+id/sv_platform_average_income"
+	   	style="@style/select_item"
+	   	android:minWidth="80dp"
+	   	/>
+    <com.money.android.common.custom.SelectView 
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="30dp"
 	   	android:id="@+id/sv_platform_score"
-	   	android:layout_weight="1"
+	   	style="@style/select_item"
 	   	android:minWidth="60dp"
 	   	/>
 </LinearLayout>

@@ -2,34 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:background="@color/white"
+    android:background="@color/selectview_bg"
     android:orientation="horizontal" >
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
-	   	android:layout_height="match_parent"
+	   	android:layout_height="30dp"
 	   	android:id="@+id/sv_comment_hot"
-	   	android:layout_weight="1"
 	   	android:minWidth="80dp"
+	   	style="@style/select_item"
 	   	/>
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
-	   	android:layout_height="match_parent"
+	   	android:layout_height="30dp"
 	   	android:id="@+id/sv_comment_time"
-	   	android:layout_weight="1"
-	   	android:minWidth="120dp"
+	   	android:minWidth="90dp"
+	   	style="@style/select_item"
 	   	/>
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
-	   	android:layout_height="match_parent"
+	   	android:layout_height="30dp"
 	   	android:id="@+id/sv_comment_essence"
-	   	android:layout_weight="1"
-	   	android:minWidth="100dp"
+	   	android:minWidth="90dp"
+	   	style="@style/select_item"
 	   	/>
     <com.money.android.common.custom.SelectView 
 	   	android:layout_width="wrap_content"
-	   	android:layout_height="match_parent"
+	   	android:layout_height="30dp"
 	   	android:id="@+id/sv_comment_plate"
-	   	android:layout_weight="1"
-	   	android:minWidth="60dp"
+	   	android:minWidth="90dp"
+	   	style="@style/select_item"
 	   	/>
 </LinearLayout>
