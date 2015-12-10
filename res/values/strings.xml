@@ -22,4 +22,5 @@
     <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
     
     <string name="infor_comment_count">%s评论</string>
+    <string name="comment_comment_count">%s评论</string>
 </resources>

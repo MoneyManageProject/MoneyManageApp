@@ -5,12 +5,12 @@ package com.money.android.comment;
 
 import java.util.ArrayList;
 
-import com.money.android.common.entity.Platform;
-
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+
+import com.money.android.common.entity.Comment;
 
 /**
  * @author ChenHongLi
@@ -18,8 +18,8 @@ import android.widget.BaseAdapter;
  */
 public class CommentListAdapter extends BaseAdapter {
 	private Context mContext;
-	private ArrayList<Platform> platformList;
-	public CommentListAdapter(Context ctx,ArrayList<Platform> platformList){
+	private ArrayList<Comment> platformList;
+	public CommentListAdapter(Context ctx,ArrayList<Comment> platformList){
 		mContext = ctx;
 		this.platformList = platformList;
 	}
@@ -42,9 +42,9 @@ public class CommentListAdapter extends BaseAdapter {
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		if(convertView == null) {
-			convertView = new PlatformItemView(mContext);
+			convertView = new CommentItemView(mContext);
 		}
-		((PlatformItemView)convertView).setData(platformList.get(position));
+		((CommentItemView)convertView).setData(platformList.get(position));
 		return convertView;
 	}
 }
