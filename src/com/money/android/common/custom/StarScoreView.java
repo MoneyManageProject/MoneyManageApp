@@ -6,8 +6,10 @@ package com.money.android.common.custom;
 import com.money.android.R;
 
 import android.content.Context;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -37,9 +39,9 @@ public class StarScoreView extends LinearLayout{
 
 	private void init(){
 		//根据图片加载工具加载三张星图
-		//bitStarFull = 
-		//bitStarEmpty = 
-		//bitStarHalf =
+		bitStarFull = new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), R.drawable.platform_starscore_full));
+		bitStarEmpty = new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), R.drawable.platform_starscore_empty));
+		bitStarHalf = new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), R.drawable.platform_starscore_full));
 		this.setOrientation(LinearLayout.HORIZONTAL);
 	}
 	
@@ -48,6 +50,8 @@ public class StarScoreView extends LinearLayout{
 	 * @param score
 	 */
 	public void setData(float score){
+		Log.e("HongLi", "score:" + score);
+		removeAllViews();
 		if(score < 0 || score > MAX_STAR_SIZE){
 			return;
 		}
